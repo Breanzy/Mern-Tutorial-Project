@@ -34,7 +34,8 @@ export default function UpdatePost() {
                     console.log(data.message);
                     setPublishError(data.message);
                     return;
-                } else {
+                } 
+                if (res.ok) {
                     setPublishError(null);
                     setFormData(data.posts[0]);
                 }

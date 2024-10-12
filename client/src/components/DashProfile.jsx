@@ -131,7 +131,7 @@ export default function DashProfile() {
                 method: "DELETE",
             });
             const data = await res.json();
-            if (!response.ok) {
+            if (!res.ok) {
                 dispatch(deleteUserFailure(data.message));
             } else {
                 dispatch(deleteUserSuccess(data));
