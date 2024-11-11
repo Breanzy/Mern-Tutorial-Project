@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "firebase": "^10.13.1",
     "flowbite-react": "^0.10.1",
     "moment": "^2.30.1",
