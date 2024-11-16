@@ -1,7 +1,7 @@
 import { Alert, Button, FileInput, Select, TextInput } from "flowbite-react";
 import { useEffect, useState } from "react";
-import ReactQuill from "react-quill-new";
-import "react-quill-new/dist/quill.snow.css";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 import {
     getDownloadURL,
     getStorage,
@@ -34,7 +34,7 @@ export default function UpdatePost() {
                     console.log(data.message);
                     setPublishError(data.message);
                     return;
-                } 
+                }
                 if (res.ok) {
                     setPublishError(null);
                     setFormData(data.posts[0]);

@@ -1,7 +1,7 @@
 import { Alert, Button, FileInput, Select, TextInput } from "flowbite-react";
 import { useState } from "react";
-import ReactQuill from "react-quill-new";
-import "react-quill-new/dist/quill.snow.css";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 import {
     getDownloadURL,
     getStorage,
@@ -79,7 +79,7 @@ export default function CreatePost() {
 
             if (res.ok) {
                 setPublishError(null);
-                navigate(`/post/${data.slug}`)
+                navigate(`/post/${data.slug}`);
             }
         } catch (error) {
             publishError("Something went wrong");
